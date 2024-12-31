@@ -1,0 +1,10 @@
+This Python code performs **color detection** from an image using OpenCV. Here's a summary:
+
+1. **Image Loading**: The image (`pallete.png`) is loaded using `cv2.imread()`.
+2. **Color Data**: A CSV file (`colors.csv`) containing color names and their RGB values is loaded using Pandas.
+3. **Color Matching**: The function `find_color_name()` calculates the closest matching color name by comparing the RGB values from the image with the values from the CSV file using Manhattan distance.
+4. **Mouse Callback**: When the user double-clicks on the image, the program captures the color at the clicked pixel and displays the corresponding color name along with its RGB values.
+5. **Display**: A colored rectangle is drawn at the top of the image, and the color name and RGB values are displayed inside it. The text color changes to improve readability based on the brightness of the selected color.
+6. **Exit**: The program runs in a loop, and the user can exit by pressing the space bar.
+
+This code allows for interactive color detection and display on any selected pixel from the image.
